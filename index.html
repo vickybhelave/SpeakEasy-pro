@@ -1,0 +1,77 @@
+<!-- Save this as index.html and open in your browser -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpeakEasy — Pro (30 Levels)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" id="app">
+      <div class="header">
+        <div class="logo">
+          <div class="dot">S</div>
+          <div>
+            <h1>SpeakEasy — Pro</h1>
+            <div class="small">30 Levels • Hindi → English • Master Track</div>
+          </div>
+        </div>
+        <div class="controls">
+          <div id="user-name-display" class="small-badge" style="display:none"></div>
+          <button class="btn ghost" id="resetBtn">Reset Progress</button>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="panel left">
+          <!-- Dynamic content area -->
+          <div id="contentArea">
+            <!-- initial will be injected by JS -->
+          </div>
+        </div>
+
+        <div class="panel right">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div class="small">Current Level</div>
+              <div id="currentLevel" style="font-weight:800;font-size:22px">—</div>
+            </div>
+            <div style="text-align:right">
+              <div class="small">Timer</div>
+              <div class="timer" id="timerDisplay">00:00</div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <div class="small">Progress</div>
+            <div class="progress-bar" style="margin-top:8px">
+              <div id="progressFill" class="progress"></div>
+            </div>
+            <div class="hint" id="progressText">0 / 30 completed</div>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="small">Levels</div>
+            <div class="level-grid" id="levelsList" style="margin-top:8px"></div>
+          </div>
+
+          <div style="margin-top:12px">
+            <div class="small">Recent Activity</div>
+            <div class="list" id="recentList" style="margin-top:8px">
+              <!-- recent rows -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>Made with ❤️ — Vicky bhelave • SpeakEasy - Pro Levels: 1–30</footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
